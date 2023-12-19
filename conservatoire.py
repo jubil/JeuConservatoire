@@ -22,8 +22,8 @@ rowsPins = [18, 23, 24, 25]     #connect to the row pinouts of the keypad
 colsPins = [10, 22, 27, 17]     #connect to the column pinouts of the keypad
 
 # Variables
-reponse = "12341234"
-styles = ["Classique", "Jazz", "Country", "Reggae"]
+reponse = "A1B2C3D4"
+styles = ["Classique", "Blues", "Country", "Reggae"]
 
 def buzztouches():
     buzzer.on()
