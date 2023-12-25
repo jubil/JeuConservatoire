@@ -22,7 +22,7 @@ rowsPins = [18, 23, 24, 25]     #connect to the row pinouts of the keypad
 colsPins = [10, 22, 27, 17]     #connect to the column pinouts of the keypad
 
 # Variables
-reponse = "1234"
+reponse = "A1B2C3D4"
 styles = ["Classique", "Blues", "Country", "Reggae"]
 
 def buzztouches():
@@ -75,7 +75,7 @@ def loop():
             saisie += key
             display.lcd_clear()
             long_string(display, "Votre saisie :" , 1)
-            long_string(display, "____" , 2) 
+            long_string(display, "________" , 2) 
             long_string(display, "%s"%(saisie) , 2)
             
             if(len(saisie) == len(reponse)):
