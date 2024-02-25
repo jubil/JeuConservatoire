@@ -22,7 +22,7 @@ rowsPins = [18, 23, 24, 25]     #connect to the row pinouts of the keypad
 colsPins = [10, 22, 27, 17]     #connect to the column pinouts of the keypad
 
 # Variables
-reponse = "A1B2C3D4"
+reponse = "A5796B4683C9214"
 styles = ["Classique", "Blues", "Country", "Reggae"]
 
 def buzztouches():
@@ -75,7 +75,7 @@ def loop():
             saisie += key
             display.lcd_clear()
             long_string(display, "Votre saisie :" , 1)
-            long_string(display, "________" , 2) 
+            long_string(display, "_______________" , 2) 
             long_string(display, "%s"%(saisie) , 2)
             
             if(len(saisie) == len(reponse)):
@@ -85,7 +85,7 @@ def loop():
                     long_string(display, "Bravo, jeu des" ,1)
                     long_string(display, "Patios reussi !" ,2)
                     buzzvictoire()
-                    sleep(4)
+                    sleep(3)
                     for i, style in enumerate(styles):
                         display.lcd_clear()
                         long_string(display, "Patio %s :"%(i+1) ,1)
@@ -106,7 +106,7 @@ def loop():
                 long_string(display, "Saisissez code" , 2)
                 
 # Message d'accueil
-long_string(display, "Jeu des patios" , 1)
-long_string(display, "Saisissez code" , 2)
+long_string(display, "Jeu des 3 salles," , 1)
+long_string(display, "Entrez code svp" , 2)
 
 loop()
