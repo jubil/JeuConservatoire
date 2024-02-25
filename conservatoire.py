@@ -82,8 +82,8 @@ def loop():
                 display.lcd_clear()
                 
                 if(saisie == reponse):
-                    long_string(display, "Bravo, jeu des" ,1)
-                    long_string(display, "Patios reussi !" ,2)
+                    long_string(display, "Bravo, c'est un" ,1)
+                    long_string(display, "sans faute !" ,2)
                     buzzvictoire()
                     sleep(3)
                     for i, style in enumerate(styles):
