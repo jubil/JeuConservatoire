@@ -79,7 +79,7 @@ def loop():
             
             if(len(saisie) == len(reponse)):
                 display.lcd_clear()
-                
+                sleep(1)
                 if(saisie == reponse):
                     long_string(display, "BRAVO, c'est un" ,1)
                     long_string(display, "sans faute !" ,2)
@@ -114,14 +114,14 @@ def loop():
                     sleep(1)            
                     display.lcd_clear()            
                 else:
-                    long_string(display, "HELAS ! Le code" ,1)
-                    long_string(display, "est inexact :-(" ,2)
+                    long_string(display, "HELAS... Le code" ,1)
+                    long_string(display, "est inexact" ,2)
                     led_rouge.on()
                     buzzdefaite()
                     sleep(3)
                     display.lcd_clear()
-                    long_string(display, "Peut-etre une" ,1)
-                    long_string(display, "erreur de saisie" ,1)
+                    long_string(display, "Une erreur" ,1)
+                    long_string(display, "de saisie ?" ,2)
                     sleep(2)
                     display.lcd_clear()
                     long_string(display, "Ressayer ?" ,1)
