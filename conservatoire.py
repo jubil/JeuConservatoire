@@ -95,7 +95,7 @@ def loop():
                     sleep(5)
                     display.lcd_clear()
                     long_string(display, "----> 5273 <----" ,2)
-                    sleep()
+                    sleep(5)
                     display.lcd_clear()                                                 
                 else:
                     long_string(display, "HELAS... Le code" ,1)
