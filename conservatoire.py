@@ -92,11 +92,11 @@ def loop():
                     display.lcd_clear()
                     long_string(display, "Le code du" ,1)
                     long_string(display, "cadenas est 5273" ,2)
-                    Sleep(4)
+                    sleep(4)
                     display.lcd_clear()
                     long_string(display, "5273" ,1)
                     long_string(display, "Notez-le SVP" ,2)
-                    Sleep(5)
+                    sleep(5)
                     display.lcd_clear()
                 else:
                     long_string(display, "HELAS ! Le code" ,1)
