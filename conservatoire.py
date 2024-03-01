@@ -79,7 +79,7 @@ def loop():
             
             if(len(saisie) == len(reponse)):
                 display.lcd_clear()
-                sleep(1)
+                sleep(0.5)
                 if(saisie == reponse):
                     long_string(display, "BRAVO, c'est un" ,1)
                     long_string(display, "sans faute !" ,2)
@@ -95,24 +95,21 @@ def loop():
                     sleep(4)
                     display.lcd_clear()
                     long_string(display, "SVP, notez-le sur votre feuille de route" ,1)
-                    long_string(display, "5273" ,2)
+                    long_string(display, "----> 5273 <----" ,2)
                     sleep(5)
                     display.lcd_clear()
                     long_string(display, "5273" ,1)
                     sleep(1)
                     display.lcd_clear()
                     sleep(1)
-                    long_string(display, "5273" ,1)
+                    long_string(display, "     5273" ,1)
                     sleep(1)            
                     display.lcd_clear()
                     sleep(1)
-                    long_string(display, "5273" ,1)
+                    long_string(display, "          5273" ,1)
                     sleep(1)            
                     display.lcd_clear()
-                    sleep(1)
-                    long_string(display, "5273" ,1)
-                    sleep(1)            
-                    display.lcd_clear()            
+                               
                 else:
                     long_string(display, "HELAS... Le code" ,1)
                     long_string(display, "est inexact" ,2)
