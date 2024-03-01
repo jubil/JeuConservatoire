@@ -23,7 +23,6 @@ colsPins = [10, 22, 27, 17]     #connect to the column pinouts of the keypad
 
 # Variables
 reponse = "A5796B4683C9214"
-styles = ["Classique", "Blues", "Country", "Reggae"]
 
 def buzztouches():
     buzzer.on()
@@ -82,21 +81,30 @@ def loop():
                 display.lcd_clear()
                 
                 if(saisie == reponse):
-                    long_string(display, "Bravo, c'est un" ,1)
+                    long_string(display, "BRAVO, c'est un" ,1)
                     long_string(display, "sans faute !" ,2)
                     buzzvictoire()
                     sleep(3)
-                    for i, style in enumerate(styles):
-                        display.lcd_clear()
-                        long_string(display, "Patio %s :"%(i+1) ,1)
-                        long_string(display, style, 2)
-                        sleep(1.5)
-                                                       
+                    display.lcd_clear()
+                    long_string(display, "Vous avez accès" ,1)
+                    long_string(display, "au coffre !" ,2)
+                    sleep(3)
+                    display.lcd_clear()
+                    long_string(display, "Le code du" ,1)
+                    long_string(display, "cadenas est 5273" ,2)
+                    Sleep(4)
+                    display.lcd_clear()
+                    long_string(display, "5273" ,1)
+                    long_string(display, "Notez-le SVP" ,2)
+                    Sleep(5)
+                    display.lcd_clear()
                 else:
-                    long_string(display, "Helas !" ,1)
-                    long_string(display, "Code errone" ,2)
+                    long_string(display, "HELAS ! Le code" ,1)
+                    long_string(display, "est inexact :-(" ,2)
                     led_rouge.on()
                     buzzdefaite()
+                    sleep(3)
+                    display.lcd_clear()
                     
                 saisie = ""
                 sleep(1.5)
