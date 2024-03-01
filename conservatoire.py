@@ -79,7 +79,7 @@ def loop():
             
             if(len(saisie) == len(reponse)):
                 display.lcd_clear()
-                sleep(0.5)
+                sleep(0.6)
                 if(saisie == reponse):
                     long_string(display, "BRAVO, c'est un" ,1)
                     long_string(display, "sans faute !" ,2)
