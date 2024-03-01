@@ -98,16 +98,16 @@ def loop():
                     long_string(display, "5273" ,2)
                     sleep(4)
                     display.lcd_clear()
-                    long_string(display, "5273" ,1
+                    long_string(display, "5273" ,1)
                     sleep(1)
                     display.lcd_clear()
-                    long_string(display, "5273" ,1
+                    long_string(display, "5273" ,1)
                     sleep(1)            
                     display.lcd_clear()
-                    long_string(display, "5273" ,1
+                    long_string(display, "5273" ,1)
                     sleep(1)            
                     display.lcd_clear()
-                    long_string(display, "5273" ,1
+                    long_string(display, "5273" ,1)
                     sleep(1)            
                     display.lcd_clear()            
                 else:
