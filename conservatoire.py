@@ -120,6 +120,14 @@ def loop():
                     buzzdefaite()
                     sleep(3)
                     display.lcd_clear()
+                    long_string(display, "Peut-etre une" ,1)
+                    long_string(display, "erreur de saisie" ,1)
+                    sleep(2)
+                    display.lcd_clear()
+                    long_string(display, "Ressayer ?" ,1)
+                    long_string(display, "OUI-->1 NON-->2" ,2)
+                    sleep(4)
+                    display.lcd_clear()
                     
                 saisie = ""
                 sleep(1.5)
