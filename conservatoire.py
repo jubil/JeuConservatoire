@@ -86,7 +86,7 @@ def loop():
                     buzzvictoire()
                     sleep(3)
                     display.lcd_clear()
-                    long_string(display, "Vous avez accès" ,1)
+                    long_string(display, "Vous avez acces" ,1)
                     long_string(display, "au coffre !" ,2)
                     sleep(3)
                     display.lcd_clear()
