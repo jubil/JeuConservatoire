@@ -98,7 +98,7 @@ def loop():
                     sleep(5)
                     display.lcd_clear()
                     long_string(display, "----> 5273 <----" ,1)
-                    sleep(5)
+                    sleep(6)
                     display.lcd_clear()                                                 
                 else:
                     long_string(display, "HELAS... Le code" ,1)
@@ -110,19 +110,19 @@ def loop():
                     if(saisie[:5]!=reponse[:5]):
                         long_string(display, "Erreur salle A" ,1)
                         long_string(display, "%s est faux"%(saisie[:5]) ,2)
-                        sleep(4)
+                        sleep(5)
                         display.lcd_clear()
                         
                     if(saisie[5:10]!=reponse[5:10]):
                         long_string(display, "Erreur salle B" ,1)
                         long_string(display, "%s est faux"%(saisie[5:10]) ,2)
-                        sleep(4)
+                        sleep(5)
                         display.lcd_clear()
                                     
                     if(saisie[10:15]!=reponse[10:15]):
                         long_string(display, "Erreur salle C" ,1)
                         long_string(display, "%s est faux"%(saisie[10:15]) ,2)
-                        sleep(4)
+                        sleep(5)
                         display.lcd_clear()            
  
                 saisie = ""
