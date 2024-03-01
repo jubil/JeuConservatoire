@@ -99,17 +99,14 @@ def loop():
                     sleep(4)
                     display.lcd_clear()
                     long_string(display, "5273" ,1
-                    sleep(1)            
-                    display.lcd_clear()
                     sleep(1)
+                    display.lcd_clear()
                     long_string(display, "5273" ,1
                     sleep(1)            
                     display.lcd_clear()
-                    sleep(1)
                     long_string(display, "5273" ,1
                     sleep(1)            
                     display.lcd_clear()
-                    sleep(1)
                     long_string(display, "5273" ,1
                     sleep(1)            
                     display.lcd_clear()            
