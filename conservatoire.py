@@ -110,19 +110,19 @@ def loop():
                     display.lcd_clear()
                     if(saisie[:5]!=reponse[:5]):
                         long_string(display, "Erreur salle A" ,1)
-                        long_string(display, "%s est faux"%(saisie[:5] ,2)
+                        long_string(display, "%s est faux"%(saisie[:5]) ,2)
                         sleep(4)
                         display.lcd_clear()
                         
                     if(saisie[6:10]!=reponse[6:10]):
                         long_string(display, "Erreur salle B" ,1)
-                        long_string(display, "%s est faux"%(saisie[6:10] ,2)
+                        long_string(display, "%s est faux"%(saisie[6:10]) ,2)
                         sleep(4)
                         display.lcd_clear()
                                     
                     if(saisie[11:15]!=reponse[11:15]):
                         long_string(display, "Erreur salle C" ,1)
-                        long_string(display, "%s est faux"%(saisie[11:15] ,2)
+                        long_string(display, "%s est faux"%(saisie[11:15]) ,2)
                         sleep(4)
                         display.lcd_clear()            
  
