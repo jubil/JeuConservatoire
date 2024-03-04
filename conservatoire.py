@@ -69,9 +69,7 @@ def loop():
     keypad.setDebounceTime(50)      #set the debounce time
     while(True):
         key = keypad.getKey()       #obtain the state of keys
-        while(True) :
-            key = keypad.getKey()
-            if(key == keypad.NULL):
+        for(key == keypad.NUll):
             long_string(display, "3 salles..." , 1)
             long_string(display, "3 ambiances !" , 2)
             sleep(2)
