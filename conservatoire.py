@@ -73,12 +73,13 @@ def loop():
             if (key == keypad.NULL):
                 long_string(display, "3 salles..." , 1)
                 long_string(display, "3 ambiances !" , 2)
-                sleep(1.5)
+                sleep(2.5)
                 display.lcd_clear()
                 long_string(display, "Saisissez votre", 1)
                 long_string(display, "code SVP", 2)
-                sleep(1.5)
+                sleep(2.5)
                 display.lcd_clear()
+                key = keypad.getKey()
                 
             if(key != keypad.NULL):     #if there is key pressed, print its key code.
                 buzztouches()
