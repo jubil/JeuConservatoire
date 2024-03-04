@@ -69,17 +69,17 @@ def loop():
     keypad.setDebounceTime(50)      #set the debounce time
     while(True):
         key = keypad.getKey()       #obtain the state of keys
-        for(key == keypad.NUll):
-            long_string(display, "3 salles..." , 1)
-            long_string(display, "3 ambiances !" , 2)
-            sleep(2)
-            display.lcd_clear()
-            long_string(display, "SVP, saisissez" , 1)
-            long_string(display, "code (15 caract)" , 2)
-            sleep(2)
-            display.lcd_clear()
-            key = keypad.getKey()
-                   
+        while(True) :
+            if saisie=""
+                long_string(display, "3 salles..." , 1)
+                long_string(display, "3 ambiances !" , 2)
+                sleep(2)
+                display.lcd_clear()
+                long_string(display, "SVP, saisissez" , 1)
+                long_string(display, "code (15 caract)" , 2)
+                sleep(2)
+                display.lcd_clear()
+                                 
             
         if(key != keypad.NULL):     #if there is key pressed, print its key code.
             buzztouches()
