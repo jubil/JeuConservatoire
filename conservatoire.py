@@ -70,7 +70,7 @@ def loop():
     while(True):
         key = keypad.getKey()       #obtain the state of keys
         while(True) :
-            if saisie=""
+            if(saisie=""):
                 long_string(display, "3 salles..." , 1)
                 long_string(display, "3 ambiances !" , 2)
                 sleep(2)
