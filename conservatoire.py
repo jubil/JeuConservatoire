@@ -81,7 +81,7 @@ def loop():
                 display.lcd_clear()
                 key = keypad.getKey()
                 
-            if(key != keypad.NULL):     #if there is key pressed, print its key code.
+            else(key != keypad.NULL):     #if there is key pressed, print its key code.
                 buzztouches()
                 if (key=="D"):
                     saisie = saisie[:len(saisie)-1]
