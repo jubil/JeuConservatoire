@@ -75,72 +75,73 @@ def loop():
                 long_string(display, "3 ambiances !" , 2)
                 sleep(1.5)
                 display.lcd_clear()
-                long_string(display, "Entrez votre code SVP", 1)
+                long_string(display, "Saisissez votre", 1)
+                long_string(display, "code SVP", 2)
                 sleep(1.5)
                 display.lcd_clear()
                 
-        if(key != keypad.NULL):     #if there is key pressed, print its key code.
-            buzztouches()
-            if (key=="D"):
-                saisie = saisie[:len(saisie)-1]
+            if(key != keypad.NULL):     #if there is key pressed, print its key code.
+                buzztouches()
+                if (key=="D"):
+                    saisie = saisie[:len(saisie)-1]
 
-            else:    
-                saisie += key
-            display.lcd_clear()
-            long_string(display, "Votre saisie :" , 1)
-            long_string(display, "_______________" , 2) 
-            long_string(display, "%s"%(saisie) , 2)
-            
-            if(len(saisie) == len(reponse)):
+                else:    
+                    saisie += key
                 display.lcd_clear()
-                if(saisie == reponse):
-                    long_string(display, "BRAVO, c'est un" ,1)
-                    long_string(display, "sans faute !" ,2)
-                    buzzvictoire()
-                    sleep(3)
+                long_string(display, "Votre saisie :" , 1)
+                long_string(display, "_______________" , 2) 
+                long_string(display, "%s"%(saisie) , 2)
+                
+                if(len(saisie) == len(reponse)):
                     display.lcd_clear()
-                    long_string(display, "Vous avez acces" ,1)
-                    long_string(display, "au coffre !" ,2)
-                    sleep(4)
-                    display.lcd_clear()
-                    long_string(display, "Le code du" ,1)
-                    long_string(display, "cadenas est 5273" ,2)
-                    sleep(5)
-                    display.lcd_clear()
-                    long_string(display, "----> 5273 <----" ,1)
-                    sleep(6)
-                    display.lcd_clear()                                                 
-                else:
-                    long_string(display, "HELAS... Le code" ,1)
-                    long_string(display, "est incorrect" ,2)
-                    led_rouge.on()
-                    buzzdefaite()
-                    sleep(3)
-                    display.lcd_clear()
-                    if(saisie[:5]!=reponse[:5]):
-                        long_string(display, "Erreur salle A" ,1)
-                        long_string(display, "%s est faux"%(saisie[:5]) ,2)
+                    if(saisie == reponse):
+                        long_string(display, "BRAVO, c'est un" ,1)
+                        long_string(display, "sans faute !" ,2)
+                        buzzvictoire()
+                        sleep(3)
+                        display.lcd_clear()
+                        long_string(display, "Vous avez acces" ,1)
+                        long_string(display, "au coffre !" ,2)
+                        sleep(4)
+                        display.lcd_clear()
+                        long_string(display, "Le code du" ,1)
+                        long_string(display, "cadenas est 5273" ,2)
                         sleep(5)
                         display.lcd_clear()
-                        
-                    if(saisie[5:10]!=reponse[5:10]):
-                        long_string(display, "Erreur salle B" ,1)
-                        long_string(display, "%s est faux"%(saisie[5:10]) ,2)
-                        sleep(5)
+                        long_string(display, "----> 5273 <----" ,1)
+                        sleep(6)
+                        display.lcd_clear()                                                 
+                    else:
+                        long_string(display, "HELAS... Le code" ,1)
+                        long_string(display, "est incorrect" ,2)
+                        led_rouge.on()
+                        buzzdefaite()
+                        sleep(3)
                         display.lcd_clear()
-                                    
-                    if(saisie[10:15]!=reponse[10:15]):
-                        long_string(display, "Erreur salle C" ,1)
-                        long_string(display, "%s est faux"%(saisie[10:15]) ,2)
-                        sleep(5)
-                        display.lcd_clear()            
- 
-                saisie = ""
-                sleep(1.5)
-                display.lcd_clear()
-                led_rouge.off()
-                #long_string(display, "Jeu des 3 salles" , 1)
-                #long_string(display, "Entrez code svp" , 2)
+                        if(saisie[:5]!=reponse[:5]):
+                            long_string(display, "Erreur salle A" ,1)
+                            long_string(display, "%s est faux"%(saisie[:5]) ,2)
+                            sleep(5)
+                            display.lcd_clear()
+                            
+                        if(saisie[5:10]!=reponse[5:10]):
+                            long_string(display, "Erreur salle B" ,1)
+                            long_string(display, "%s est faux"%(saisie[5:10]) ,2)
+                            sleep(5)
+                            display.lcd_clear()
+                                        
+                        if(saisie[10:15]!=reponse[10:15]):
+                            long_string(display, "Erreur salle C" ,1)
+                            long_string(display, "%s est faux"%(saisie[10:15]) ,2)
+                            sleep(5)
+                            display.lcd_clear()            
+     
+                    saisie = ""
+                    sleep(1.5)
+                    display.lcd_clear()
+                    led_rouge.off()
+                    #long_string(display, "Jeu des 3 salles" , 1)
+                    #long_string(display, "Entrez code svp" , 2)
                 
 # Message d'accueil
 #long_string(display, "Jeu des 3 salles" , 1)
