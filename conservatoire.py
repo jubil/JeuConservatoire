@@ -141,11 +141,6 @@ def loop():
                 sleep(1.5)
                 display.lcd_clear()
                 led_rouge.off()
-                long_string(display, "Jeu des 3 salles" , 1)
-                long_string(display, "Entrez code svp" , 2)
                 
-# Message d'accueil
-long_string(display, "Jeu des 3 salles" , 1)
-long_string(display, "Entrez code svp" , 2)
 
 loop()
