@@ -79,7 +79,7 @@ def loop():
                 long_string(display, "code (15 caract)" , 2)
                 sleep(1.5)
                 display.lcd_clear()
-            if(key != keypad.NULL):
+            else:
                 break
             
             
