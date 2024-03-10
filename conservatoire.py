@@ -84,12 +84,12 @@ def loop():
             if(len(saisie) == len(reponse)):
                 display.lcd_clear()
                 if(saisie == reponse):
-                    led_verte.on()
                     long_string(display, "BRAVO, c'est un" ,1)
                     long_string(display, "sans faute !" ,2)
                     buzzvictoire()
                     sleep(3)
                     display.lcd_clear()
+                    led_verte.on()
                     long_string(display, "Vous avez acces" ,1)
                     long_string(display, "au coffre !" ,2)
                     sleep(4)
