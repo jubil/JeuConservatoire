@@ -98,7 +98,7 @@ def loop():
                     long_string(display, "cadenas est 719" ,2)
                     sleep(5)
                     display.lcd_clear()
-                    long_string(display, "Noter SVP sur la" ,1)
+                    long_string(display, "Notez SVP sur la" ,1)
                     long_string(display, "feuille de route" ,2)
                     sleep(4)
                     display.lcd_clear()
