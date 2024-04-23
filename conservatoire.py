@@ -22,7 +22,7 @@ rowsPins = [18, 23, 24, 25]     #connect to the row pinouts of the keypad
 colsPins = [10, 22, 27, 17]     #connect to the column pinouts of the keypad
 
 # Variables
-reponse = "A5796B4683C9214"
+reponse = "A5243B6135C2415"
 
 def buzztouches():
     buzzer.on()
@@ -90,17 +90,22 @@ def loop():
                     sleep(3)
                     display.lcd_clear()
                     led_verte.on()
-                    long_string(display, "Vous avez acces" ,1)
-                    long_string(display, "au coffre !" ,2)
+                    long_string(display, "Vous pourrez" ,1)
+                    long_string(display, "ouvrir le coffre" ,2)
                     sleep(4)
                     display.lcd_clear()
                     long_string(display, "Le code du" ,1)
-                    long_string(display, "cadenas est 5273" ,2)
+                    long_string(display, "cadenas est 719" ,2)
                     sleep(5)
                     display.lcd_clear()
-                    long_string(display, "----> 5273 <----" ,1)
-                    sleep(6)
+                    long_string(display, "Noter SVP sur la" ,1)
+                    long_string(display, "feuille de route" ,2)
+                    sleep(4)
                     display.lcd_clear()
+                    long_string(display, "--->  719  <---" ,1)
+                    sleep(5)
+                    display.lcd_clear()
+                    
                     led_verte.off()
                 else:
                     long_string(display, "HELAS... Le code" ,1)
