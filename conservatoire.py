@@ -92,11 +92,11 @@ def loop():
                     led_verte.on()
                     long_string(display, "OUAH! La musique" ,1)
                     long_string(display, "dans la peau!" ,2)
-                    sleep(2)
+                    sleep(4)
                     display.lcd_clear()
                     long_string(display, ";)Rejoignez-nous" ,1)
                     long_string(display, "au Conservatoire" ,2)
-                    sleep(2)
+                    sleep(4)
                     display.lcd_clear()
                     led_verte.off()
                     
@@ -110,21 +110,26 @@ def loop():
                     if(saisie[:5]!=reponse[:5]):
                         long_string(display, "Erreur salle A" ,1)
                         long_string(display, "%s est faux"%(saisie[:5]) ,2)
-                        sleep(5)
+                        sleep(4)
                         display.lcd_clear()
                         
                     if(saisie[5:10]!=reponse[5:10]):
                         long_string(display, "Erreur salle B" ,1)
                         long_string(display, "%s est faux"%(saisie[5:10]) ,2)
-                        sleep(5)
+                        sleep(4)
                         display.lcd_clear()
                                     
                     if(saisie[10:15]!=reponse[10:15]):
                         long_string(display, "Erreur salle C" ,1)
                         long_string(display, "%s est faux"%(saisie[10:15]) ,2)
-                        sleep(5)
-                        display.lcd_clear()            
- 
+                        sleep(4)
+                        display.lcd_clear()
+                        
+                     long_string(display, "Merci de votre" ,1)
+                     long_string(display, "participation !" ,2)   
+                     sleep(4)
+                     display.lcd_clear()
+                     
                 saisie = ""
                 sleep(1.5)
                 display.lcd_clear()
