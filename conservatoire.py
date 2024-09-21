@@ -125,10 +125,10 @@ def loop():
                         sleep(4)
                         display.lcd_clear()
                         
-                     long_string(display, "Merci de votre" ,1)
-                     long_string(display, "participation !" ,2)   
-                     sleep(4)
-                     display.lcd_clear()
+                    long_string(display, "Merci de votre" ,1)
+                    long_string(display, "participation !" ,2)   
+                    sleep(4)
+                    display.lcd_clear()
                      
                 saisie = ""
                 sleep(1.5)
