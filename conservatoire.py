@@ -85,7 +85,7 @@ def loop():
                 display.lcd_clear()
                 if(saisie == reponse):
                     long_string(display, "BRAVO, c'est un" ,1)
-                    long_string(display, "sans faute !" ,2)
+                    long_string(display, "sans faute!" ,2)
                     buzzvictoire()
                     sleep(2)
                     display.lcd_clear()
@@ -96,13 +96,13 @@ def loop():
                     display.lcd_clear()
                     long_string(display, ";)Rejoignez-nous" ,1)
                     long_string(display, "au Conservatoire" ,2)
-                    sleep(4)
+                    sleep(6)
                     display.lcd_clear()
                     led_verte.off()
                     
                 else:
                     long_string(display, "HELAS! Le code" ,1)
-                    long_string(display, "est incorrect :" ,2)
+                    long_string(display, "est incorrect:" ,2)
                     led_rouge.on()
                     buzzdefaite()
                     sleep(3)
@@ -126,11 +126,11 @@ def loop():
                         display.lcd_clear()
                     long_string(display, "Rien de grave,ce" ,1)
                     long_string(display, "n'est qu'un jeu!" ,2)   
-                    sleep(4)
+                    sleep(5)
                     display.lcd_clear()    
                     long_string(display, "Merci de votre" ,1)
-                    long_string(display, "participation" ,2)   
-                    sleep(4)
+                    long_string(display, "participation." ,2)   
+                    sleep(5)
                     display.lcd_clear()
                      
                 saisie = ""
