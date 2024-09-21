@@ -101,8 +101,8 @@ def loop():
                     led_verte.off()
                     
                 else:
-                    long_string(display, "HELAS ! Le code" ,1)
-                    long_string(display, "est incorrect" ,2)
+                    long_string(display, "HELAS! Le code" ,1)
+                    long_string(display, "est incorrect :" ,2)
                     led_rouge.on()
                     buzzdefaite()
                     sleep(3)
@@ -125,11 +125,11 @@ def loop():
                         sleep(4)
                         display.lcd_clear()
                     long_string(display, "Rien de grave,ce" ,1)
-                    long_string(display, "n'est qu'un jeu" ,2)   
+                    long_string(display, "n'est qu'un jeu!" ,2)   
                     sleep(4)
                     display.lcd_clear()    
                     long_string(display, "Merci de votre" ,1)
-                    long_string(display, "participation !" ,2)   
+                    long_string(display, "participation" ,2)   
                     sleep(4)
                     display.lcd_clear()
                      
