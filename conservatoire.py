@@ -124,7 +124,10 @@ def loop():
                         long_string(display, "%s est faux"%(saisie[10:15]) ,2)
                         sleep(4)
                         display.lcd_clear()
-                        
+                    long_string(display, "Rien de grave,ce" ,1)
+                    long_string(display, "n'est qu'un jeu" ,2)   
+                    sleep(4)
+                    display.lcd_clear()    
                     long_string(display, "Merci de votre" ,1)
                     long_string(display, "participation !" ,2)   
                     sleep(4)
